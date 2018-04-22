@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.mobilevids" name="Mobilevids" provider-name="Brad Zazulak" version="1.0.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Stream from http://mobilevids.org</summary>
+    <description>Stream from http://mobilevids.org (Requires account, Set your username and password in addon settings)</description>
+	<assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+  </assets>
+  </extension>
+</addon>
+
+    <addon id="mv.repo" name="MV REPO" version="1.0.0" provider-name="MV">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="MV REPO">
+            <info compressed="false">https://raw.githubusercontent.com/mvrepo/kodi/master/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mvrepo/kodi/master/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mvrepo/kodi/master/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>MV Addon</summary>
+            <description>Watch MV content on KODI</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+</addons>

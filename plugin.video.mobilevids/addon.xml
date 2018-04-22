@@ -1,0 +1,17 @@
+<addon id="plugin.video.mobilevids" name="Mobilevids" provider-name="Brad Zazulak" version="1.0.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Stream from http://mobilevids.org</summary>
+    <description>Stream from http://mobilevids.org (Requires account, Set your username and password in addon settings)</description>
+	<assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+  </assets>
+  </extension>
+</addon>
